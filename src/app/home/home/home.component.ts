@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   rotateImages()
 {
   
-  this.showImage=(this.showImage+1)%8;
+  this.showImage=(this.showImage+1)%this.images.length;
 
 }
 
@@ -44,7 +44,7 @@ changeImage(change: number)
 
 }
 
-  images: any[]=['https://www.primefaces.org/primeng/assets/showcase/images/galleria/galleria1.jpg','https://www.primefaces.org/primeng/assets/showcase/images/galleria/galleria2.jpg','https://www.primefaces.org/primeng/assets/showcase/images/galleria/galleria3.jpg','https://www.primefaces.org/primeng/assets/showcase/images/galleria/galleria4.jpg','https://www.primefaces.org/primeng/assets/showcase/images/galleria/galleria5.jpg','https://www.primefaces.org/primeng/assets/showcase/images/galleria/galleria6.jpg','https://www.primefaces.org/primeng/assets/showcase/images/galleria/galleria7.jpg','https://www.primefaces.org/primeng/assets/showcase/images/galleria/galleria8.jpg'];
+  images: any[]=['assets/images/1.jpg','assets/images/2.jpg','assets/images/3.jpg','assets/images/4.jpg','assets/images/5.jpg'];
 
     responsiveOptions:any[] = [
         {

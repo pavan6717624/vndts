@@ -112,13 +112,13 @@
   font-weight: bold;
 
   position: absolute;
-  animation: mymove 4s;
-  animation-iteration-count: infinite;
+  
+  
   
 }
 
 
-#div5 {animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);}
+#div5 {animation: mymove 4s;animation-iteration-count: infinite;    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);}
 
 
 @keyframes mymove {
@@ -126,4 +126,10 @@
   100%  {left:35%; top:0px;}
   
  
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  0%   { left:0px; top:0px;}
+  100%  {left:35%; top:0px;}
 }
