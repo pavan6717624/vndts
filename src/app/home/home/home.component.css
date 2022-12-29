@@ -45,6 +45,7 @@
     -moz-box-shadow: 10px 10px 5px #ccc;
     -webkit-box-shadow: 10px 10px 5px #ccc;
     -khtml-box-shadow: 10px 10px 5px #ccc;
+    
 }
 
 
@@ -91,6 +92,7 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   background-color: rgba(0.2,0.2,0.2,0.2);
+  z-index:0.5;
 }
 
 /* Position the "next button" to the right */
@@ -107,23 +109,29 @@
 
 
 .diva {
-  width: 100px;
-  height: 50px;
+  
   font-weight: bold;
 
   position: absolute;
+
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+
+  
   
   
   
 }
 
 
-#div5 {animation: mymove 4s;animation-iteration-count: infinite;    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);}
 
 
 @keyframes mymove {
   0%   { left:0px; top:0px;}
-  100%  {left:35%; top:0px;}
+  100%  {left:15%; top:0px;}
   
  
 }
