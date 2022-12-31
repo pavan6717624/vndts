@@ -64,9 +64,11 @@ changeImage(change: number)
   else if(change==1)
   {
     if(this.showImage >= this.images.length-1)
-    this.showImage = this.images.length;
+    this.showImage = this.images.length-1;
     else
     this.showImage++;
+
+
   }
 
 }
