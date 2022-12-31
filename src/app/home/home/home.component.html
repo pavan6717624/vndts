@@ -2,9 +2,13 @@
     [style]="{'padding':'0','background-color':'red', 'width': '100%' , 'margin':'0','height':'4em','border-width':0, 'border-radius':0,'vertical-align':'middle'}">
 
     <div class="col-12" style="color:white;display:flex;
-        align-items:center;">
+        align-items:center; justify-content: space-between; font-weight: bold;">
 
-        Support : &nbsp;&nbsp;<i class="pi pi-phone"></i> &nbsp;&nbsp; +91 9874561230
+        
+
+        <div> Support : &nbsp;&nbsp; +919874561230 &nbsp;<i class="pi pi-phone"></i> </div>
+
+        <div> Mail : &nbsp;&nbsp; info@vndts.co.in &nbsp;<i class="pi pi-send"></i> </div>
 
     </div>
 
@@ -14,10 +18,10 @@
 
 <div class="sticky">
     <p-menubar [model]="menuItems"
-        [style]="{'background-color':'white', 'width': '100%' , 'height':'5em','border-width':0,'padding-top':'2em','border-radius':0}">
+        [style]="{'background-color':'white', 'width': '100%' , 'height':'5em','border-width':0,'padding-top':'1em','border-radius':0,'vertical-align':'middle'}">
 
         <ng-template [pTemplate]="isMobile?'end':'start'">
-            <img src="https://irisndts.com/images/logo.png" height="80" class="mr-2">
+            <img src="assets/images/logo.png" height="60" class="mr-2">
 
         </ng-template>
 
@@ -25,15 +29,16 @@
 
 </div>
 
-<div style="position: relative; " >
+<div style="position: relative; ">
     <img class='imgshadow' [style.height.em]="isMobile?'18':'36'" style="width: 100%;  padding:0; "
         [src]="images[showImage]" />
 
     <a class="prev" (click)="changeImage(-1)">❮</a>
     <a class="next" (click)="changeImage(1)"> ❯</a>
 
-  
-    <div class='diva' id="div5" style="background: rgba(0, 0, 0, 0.3); height:100%;width:100%; padding:10px; color: white;text-align: center;">
+
+    <div class='diva' id="div5"
+        style="background: rgba(0, 0, 0, 0.3); height:100%;width:100%; padding:10px; color: white;text-align: center;">
         <h1 style="font-size:3em">Velocity NDT Solutions</h1>
         <h3> (Work Together) </h3>
     </div>
@@ -60,20 +65,29 @@
         </div>
         <div class="col-12 md:col-4 mb-4 px-5">
             <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
-                <i class="pi pi-flag text-4xl text-blue-500"></i>
+                <i class="pi pi-slack text-4xl text-blue-500"></i>
             </span>
             <div class="text-900 text-xl mb-3 font-medium">ANDT Services</div>
-            <span class="text-700 line-height-3">Remote Visual Inspection, Magnetic Particle Inspection, Dye Penetrant
-                Inspection, Industrial Radiography, Ultrasonic Inspection</span>
+            <span class="text-700 line-height-3">Eddy Current Testing (ECT), Remote Field Testing (RFT), Internal Rotary
+                Inspection System (IRIS), Magnetic Flux Leakage Testing and Many</span>
         </div>
         <div class="col-12 md:col-4 mb-4 px-5">
             <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
-                <i class="pi pi-bolt text-4xl text-blue-500"></i>
+                <i class="pi pi-hourglass text-4xl text-blue-500"></i>
             </span>
-            <div class="text-900 text-xl mb-3 font-medium">Industries</div>
-            <span class="text-700 line-height-3">Petrochemical Oil& Gas Sector, Power Generation& Energy, Construction &
-                Fabrication Sectors</span>
+            <div class="text-900 text-xl mb-3 font-medium">CNDT Services</div>
+            <span class="text-700 line-height-3">Remote Visual Inspection, Magnetic Particle Inspection, Dye Penetrant
+                Inspection, Industrial Radiography, Ultrasonic Inspection</span>
         </div>
+        <div class="col-12 md:col-4 md:mb-4 mb-0 px-3">
+            <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
+                <i class="pi pi-shield text-4xl text-blue-500"></i>
+            </span>
+            <div class="text-900 text-xl mb-3 font-medium">Manufacturing Services</div>
+            <span class="text-700 line-height-3">Calibration Blocks, Exchanger Calibration Tubes, Probes for Exchanger
+                Tubes</span>
+        </div>
+       
         <div class="col-12 md:col-4 mb-4 px-5">
             <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
                 <i class="pi pi-key text-4xl text-blue-500"></i>
@@ -92,14 +106,16 @@
                 INSPECTORS, and Welding.
             </span>
         </div>
-        <div class="col-12 md:col-4 md:mb-4 mb-0 px-3">
+
+        <div class="col-12">
             <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
-                <i class="pi pi-shield text-4xl text-blue-500"></i>
+                <i class="pi pi-bolt text-4xl text-blue-500"></i>
             </span>
-            <div class="text-900 text-xl mb-3 font-medium">Manufacturing Services</div>
-            <span class="text-700 line-height-3">Calibration Blocks, Exchanger Calibration Tubes, Probes for Exchanger
-                Tubes</span>
+            <div class="text-900 text-xl mb-3 font-medium">Industries</div>
+            <span class="text-700 line-height-3">Petrochemical Oil& Gas Sector, Power Generation& Energy, Construction &
+                Fabrication Sectors</span>
         </div>
+       
     </div>
 </div>
 
@@ -171,15 +187,16 @@
     </div> -->
 
 
-    
-<div class="bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap" style="text-align:center">
+    <br/>
+<div class="bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap"
+    style="text-align:center">
     Copyright © 2022 Velocity NDT Solutions | All rights reserved.
-    
+
 </div>
 
-<br/>
-    <div class="icon-bar">
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-    </div>
+<br />
+<div class="icon-bar">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
