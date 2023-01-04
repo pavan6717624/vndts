@@ -5,11 +5,11 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
 import { DetailsComponent } from './details/details.component';
-import { HeaderComponent } from './header/header.component';
-import { StickyheaderComponent } from './stickyheader/stickyheader.component';
+
+
 import { ImagerotateComponent } from './imagerotate/imagerotate.component';
 import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
+
 import { IconbarComponent } from './iconbar/iconbar.component';
 
 
@@ -17,11 +17,11 @@ import { IconbarComponent } from './iconbar/iconbar.component';
   declarations: [
     HomeComponent,
     DetailsComponent,
-    HeaderComponent,
-    StickyheaderComponent,
+    
+
     ImagerotateComponent,
     ContactComponent,
-    FooterComponent,
+   
     IconbarComponent
   ],
   imports: [

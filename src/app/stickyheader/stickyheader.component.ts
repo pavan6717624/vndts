@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
@@ -8,13 +9,13 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 })
 export class StickyheaderComponent implements OnInit {
 
-
-  constructor(private deviceService: DeviceDetectorService) { }
-  menuItems=[{label:'Home',icon: 'pi pi-home'},{label:'About us',icon: 'pi pi-book'},{label:'Services',icon: 'pi pi-flag',
+  constructor(private deviceService: DeviceDetectorService, private route: Router) { }
+  menuItems=[{label:'Home',icon: 'pi pi-home',  routerLink: 'home'},{label:'About us',icon: 'pi pi-book',  routerLink: 'details'},{label:'Services',icon: 'pi pi-flag',
 
   items: [{
     label: 'ANDT Services', 
     icon: 'pi pi-slack',
+   
   },
   {
     label: 'CNDT Services', 
@@ -37,10 +38,14 @@ export class StickyheaderComponent implements OnInit {
     icon: 'pi pi-bolt',
   }],
 
-}, {label:'Contact Us',icon: 'pi pi-phone'}];
+}, {label:'Contact Us',icon: 'pi pi-phone',  routerLink: 'contact'}];
 isMobile=false;
   ngOnInit(): void {
     this.isMobile = this.deviceService.isMobile();
   }
 
+  toHome()
+  {
+    this.route.navigate(['home']);
+  }
 }
