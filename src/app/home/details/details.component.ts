@@ -12,4 +12,9 @@ export class DetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openPage(id:number)
+  {
+    alert("open page");
+  }
+
 }
