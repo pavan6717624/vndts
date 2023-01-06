@@ -11,6 +11,7 @@ import { ImagerotateComponent } from './imagerotate/imagerotate.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { IconbarComponent } from './iconbar/iconbar.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { IconbarComponent } from './iconbar/iconbar.component';
     ImagerotateComponent,
     ContactComponent,
    
-    IconbarComponent
+    IconbarComponent,
+        AboutComponent
   ],
   imports: [
     CommonModule,
