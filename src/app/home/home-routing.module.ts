@@ -7,7 +7,10 @@ import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 import { IconbarComponent } from './iconbar/iconbar.component';
 import { ImagerotateComponent } from './imagerotate/imagerotate.component';
+import { IndustriesComponent } from './industries/industries.component';
 import { MansupplyComponent } from './mansupply/mansupply.component';
+import { ManufacturingservicesComponent } from './manufacturingservices/manufacturingservices.component';
+import { TrainingservicesComponent } from './trainingservices/trainingservices.component';
 
 
 const routes: Routes = [
@@ -19,7 +22,9 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'about', component: AboutComponent},
   {path: 'manpowersupply', component: MansupplyComponent},
-  
+  {path: 'manufacturingservices', component: ManufacturingservicesComponent},
+  {path: 'trainingservices', component: TrainingservicesComponent},
+  {path: 'industries', component: IndustriesComponent},
 
   {path: 'iconbar', component: IconbarComponent},
 

@@ -30,7 +30,7 @@
             <span class="text-700 line-height-3">Remote Visual Inspection, Magnetic Particle Inspection, Dye Penetrant
                 Inspection, Industrial Radiography, Ultrasonic Inspection</span>
         </div>
-        <div class="col-12 md:col-4 md:mb-4 mb-0 px-3" >
+        <div class="col-12 md:col-4 md:mb-4 mb-0 px-3" (click)="openPage(3)">
             <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
                 <i class="pi pi-shield text-4xl text-blue-500"></i>
             </span>
@@ -39,7 +39,7 @@
                 Tubes</span>
         </div>
 
-        <div class="col-12 md:col-4 mb-4 px-5">
+        <div class="col-12 md:col-4 mb-4 px-5" (click)="openPage(4)">
             <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
                 <i class="pi pi-key text-4xl text-blue-500"></i>
             </span>
@@ -58,7 +58,7 @@
             </span>
         </div>
 
-        <div class="col-12">
+        <div class="col-12" (click)="openPage(5)">
             <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
                 <i class="pi pi-bolt text-4xl text-blue-500"></i>
             </span>

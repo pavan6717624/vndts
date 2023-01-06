@@ -14,6 +14,8 @@ import { IconbarComponent } from './iconbar/iconbar.component';
 import { AboutComponent } from './about/about.component';
 import { MansupplyComponent } from './mansupply/mansupply.component';
 import { ManufacturingservicesComponent } from './manufacturingservices/manufacturingservices.component';
+import { TrainingservicesComponent } from './trainingservices/trainingservices.component';
+import { IndustriesComponent } from './industries/industries.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { ManufacturingservicesComponent } from './manufacturingservices/manufact
     IconbarComponent,
         AboutComponent,
         MansupplyComponent,
-        ManufacturingservicesComponent
+        ManufacturingservicesComponent,
+        TrainingservicesComponent,
+        IndustriesComponent
   ],
   imports: [
     CommonModule,

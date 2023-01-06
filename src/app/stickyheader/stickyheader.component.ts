@@ -23,11 +23,11 @@ export class StickyheaderComponent implements OnInit {
   },
   {
     label: 'Manufacturing Services', 
-    icon: 'pi pi-shield',
+    icon: 'pi pi-shield',  routerLink: 'manufacturingservices'
   },
   {
     label: 'Training Services', 
-    icon: 'pi pi-key',
+    icon: 'pi pi-key',  routerLink: 'trainingservices'
   },
   {
     label: 'Manpower Supply', 
@@ -36,7 +36,7 @@ export class StickyheaderComponent implements OnInit {
   },
   {
     label: 'Industries', 
-    icon: 'pi pi-bolt',
+    icon: 'pi pi-bolt',  routerLink: 'industries'
   }],
 
 }, {label:'Contact Us',icon: 'pi pi-phone',  routerLink: 'contact'}];

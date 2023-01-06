@@ -29,7 +29,7 @@ import {AvatarModule} from 'primeng/avatar';
 import {AvatarGroupModule} from 'primeng/avatargroup';
 import {BlockUIModule} from 'primeng/blockui';
 import { BadgeModule } from "primeng/badge";
-
+import {FieldsetModule} from 'primeng/fieldset';
 const SHARED_MODULES = [
   BlockUIModule,
   BadgeModule,
@@ -42,6 +42,7 @@ const SHARED_MODULES = [
   DialogModule,
   ImageModule,
   MenuModule,
+  FieldsetModule,
   TabViewModule,
   TableModule,
   DividerModule,

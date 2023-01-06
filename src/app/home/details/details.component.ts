@@ -19,6 +19,12 @@ export class DetailsComponent implements OnInit {
     this.route.navigate(['about']);
     else if(id==2)
     this.route.navigate(['manpowersupply']);
+    else if(id==3)
+    this.route.navigate(['manufacturingservices']);
+    else if(id==4)
+    this.route.navigate(['trainingservices']);
+    else if(id==5)
+    this.route.navigate(['industries']);
   }
 
 }
