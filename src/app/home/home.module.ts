@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 
 import { IconbarComponent } from './iconbar/iconbar.component';
 import { AboutComponent } from './about/about.component';
+import { MansupplyComponent } from './mansupply/mansupply.component';
+import { ManufacturingservicesComponent } from './manufacturingservices/manufacturingservices.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { AboutComponent } from './about/about.component';
     ContactComponent,
    
     IconbarComponent,
-        AboutComponent
+        AboutComponent,
+        MansupplyComponent,
+        ManufacturingservicesComponent
   ],
   imports: [
     CommonModule,

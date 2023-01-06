@@ -10,7 +10,7 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 export class StickyheaderComponent implements OnInit {
 
   constructor(private deviceService: DeviceDetectorService, private route: Router) { }
-  menuItems=[{label:'Home',icon: 'pi pi-home',  routerLink: 'home'},{label:'About us',icon: 'pi pi-book',  routerLink: 'details'},{label:'Services',icon: 'pi pi-flag',
+  menuItems=[{label:'Home',icon: 'pi pi-home',  routerLink: 'home'},{label:'About us',icon: 'pi pi-book',  routerLink: 'about'},{label:'Services',icon: 'pi pi-flag',
 
   items: [{
     label: 'ANDT Services', 
@@ -31,7 +31,8 @@ export class StickyheaderComponent implements OnInit {
   },
   {
     label: 'Manpower Supply', 
-    icon: 'pi pi-users',
+    icon: 'pi pi-users',  routerLink: 'manpowersupply'
+    
   },
   {
     label: 'Industries', 

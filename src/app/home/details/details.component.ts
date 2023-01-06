@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-details',
@@ -7,14 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
   }
 
   openPage(id:number)
   {
-    alert("open page");
+    if(id==1)
+    this.route.navigate(['about']);
+    else if(id==2)
+    this.route.navigate(['manpowersupply']);
   }
 
 }

@@ -7,6 +7,7 @@ import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 import { IconbarComponent } from './iconbar/iconbar.component';
 import { ImagerotateComponent } from './imagerotate/imagerotate.component';
+import { MansupplyComponent } from './mansupply/mansupply.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'imagedisplay', component: ImagerotateComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'manpowersupply', component: MansupplyComponent},
   
 
   {path: 'iconbar', component: IconbarComponent},
