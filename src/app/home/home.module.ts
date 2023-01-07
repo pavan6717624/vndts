@@ -16,6 +16,12 @@ import { MansupplyComponent } from './mansupply/mansupply.component';
 import { ManufacturingservicesComponent } from './manufacturingservices/manufacturingservices.component';
 import { TrainingservicesComponent } from './trainingservices/trainingservices.component';
 import { IndustriesComponent } from './industries/industries.component';
+import { AndtsComponent } from './andts/andts.component';
+import { CndtsComponent } from './cndts/cndts.component';
+import { MagneticparticleinspectionComponent } from './magneticparticleinspection/magneticparticleinspection.component';
+import { DyepenetrantinspectionComponent } from './dyepenetrantinspection/dyepenetrantinspection.component';
+import { IndustrialradiographyComponent } from './industrialradiography/industrialradiography.component';
+import { UltrasonicinspectionComponent } from './ultrasonicinspection/ultrasonicinspection.component';
 
 
 @NgModule({
@@ -32,7 +38,13 @@ import { IndustriesComponent } from './industries/industries.component';
         MansupplyComponent,
         ManufacturingservicesComponent,
         TrainingservicesComponent,
-        IndustriesComponent
+        IndustriesComponent,
+        AndtsComponent,
+        CndtsComponent,
+        MagneticparticleinspectionComponent,
+        DyepenetrantinspectionComponent,
+        IndustrialradiographyComponent,
+        UltrasonicinspectionComponent
   ],
   imports: [
     CommonModule,

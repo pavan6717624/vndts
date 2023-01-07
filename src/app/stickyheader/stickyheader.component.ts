@@ -14,12 +14,12 @@ export class StickyheaderComponent implements OnInit {
 
   items: [{
     label: 'ANDT Services', 
-    icon: 'pi pi-slack',
+    icon: 'pi pi-slack',  routerLink: 'andts'
    
   },
   {
     label: 'CNDT Services', 
-    icon: 'pi pi-hourglass',
+    icon: 'pi pi-hourglass',  routerLink: 'cndts'
   },
   {
     label: 'Manufacturing Services', 
