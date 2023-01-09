@@ -16,6 +16,7 @@ import { MagneticparticleinspectionComponent } from './magneticparticleinspectio
 import { MansupplyComponent } from './mansupply/mansupply.component';
 import { ManufacturingservicesComponent } from './manufacturingservices/manufacturingservices.component';
 import { TrainingservicesComponent } from './trainingservices/trainingservices.component';
+import { TubeinspectionservicesComponent } from './tubeinspectionservices/tubeinspectionservices.component';
 import { UltrasonicinspectionComponent } from './ultrasonicinspection/ultrasonicinspection.component';
 
 
@@ -37,6 +38,17 @@ const routes: Routes = [
   {path: 'magneticparticleinspection', component: MagneticparticleinspectionComponent},
   {path: 'industrialradiography', component: IndustrialradiographyComponent},
   {path: 'ultrasonicinspection', component: UltrasonicinspectionComponent},
+  
+  {path: 'tubeinspectionservices', component: TubeinspectionservicesComponent},
+
+  {path: 'mfltankfloorscanning', component: TubeinspectionservicesComponent},
+  {path: 'phasedarray', component: TubeinspectionservicesComponent},
+
+  {path: 'timeofflightdiffraction', component: TubeinspectionservicesComponent},
+
+  {path: 'borescopeinspections', component: TubeinspectionservicesComponent},
+
+
 
 
 
