@@ -22,6 +22,7 @@ import { MagneticparticleinspectionComponent } from './magneticparticleinspectio
 import { DyepenetrantinspectionComponent } from './dyepenetrantinspection/dyepenetrantinspection.component';
 import { IndustrialradiographyComponent } from './industrialradiography/industrialradiography.component';
 import { UltrasonicinspectionComponent } from './ultrasonicinspection/ultrasonicinspection.component';
+import { TubeinspectionservicesComponent } from './tubeinspectionservices/tubeinspectionservices.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { UltrasonicinspectionComponent } from './ultrasonicinspection/ultrasonic
         MagneticparticleinspectionComponent,
         DyepenetrantinspectionComponent,
         IndustrialradiographyComponent,
-        UltrasonicinspectionComponent
+        UltrasonicinspectionComponent,
+        TubeinspectionservicesComponent
   ],
   imports: [
     CommonModule,
