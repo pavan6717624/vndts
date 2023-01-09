@@ -23,6 +23,10 @@ import { DyepenetrantinspectionComponent } from './dyepenetrantinspection/dyepen
 import { IndustrialradiographyComponent } from './industrialradiography/industrialradiography.component';
 import { UltrasonicinspectionComponent } from './ultrasonicinspection/ultrasonicinspection.component';
 import { TubeinspectionservicesComponent } from './tubeinspectionservices/tubeinspectionservices.component';
+import { MfltankfloorscanningComponent } from './mfltankfloorscanning/mfltankfloorscanning.component';
+import { PhasedarrayComponent } from './phasedarray/phasedarray.component';
+import { TimeofflightdiffractionComponent } from './timeofflightdiffraction/timeofflightdiffraction.component';
+import { BorescopeinspectionsComponent } from './borescopeinspections/borescopeinspections.component';
 
 
 @NgModule({
@@ -46,7 +50,11 @@ import { TubeinspectionservicesComponent } from './tubeinspectionservices/tubein
         DyepenetrantinspectionComponent,
         IndustrialradiographyComponent,
         UltrasonicinspectionComponent,
-        TubeinspectionservicesComponent
+        TubeinspectionservicesComponent,
+        MfltankfloorscanningComponent,
+        PhasedarrayComponent,
+        TimeofflightdiffractionComponent,
+        BorescopeinspectionsComponent
   ],
   imports: [
     CommonModule,

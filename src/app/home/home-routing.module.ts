@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AndtsComponent } from './andts/andts.component';
+import { BorescopeinspectionsComponent } from './borescopeinspections/borescopeinspections.component';
 import { CndtsComponent } from './cndts/cndts.component';
 import { ContactComponent } from './contact/contact.component';
 import { DetailsComponent } from './details/details.component';
@@ -15,6 +16,9 @@ import { IndustriesComponent } from './industries/industries.component';
 import { MagneticparticleinspectionComponent } from './magneticparticleinspection/magneticparticleinspection.component';
 import { MansupplyComponent } from './mansupply/mansupply.component';
 import { ManufacturingservicesComponent } from './manufacturingservices/manufacturingservices.component';
+import { MfltankfloorscanningComponent } from './mfltankfloorscanning/mfltankfloorscanning.component';
+import { PhasedarrayComponent } from './phasedarray/phasedarray.component';
+import { TimeofflightdiffractionComponent } from './timeofflightdiffraction/timeofflightdiffraction.component';
 import { TrainingservicesComponent } from './trainingservices/trainingservices.component';
 import { TubeinspectionservicesComponent } from './tubeinspectionservices/tubeinspectionservices.component';
 import { UltrasonicinspectionComponent } from './ultrasonicinspection/ultrasonicinspection.component';
@@ -41,12 +45,12 @@ const routes: Routes = [
   
   {path: 'tubeinspectionservices', component: TubeinspectionservicesComponent},
 
-  {path: 'mfltankfloorscanning', component: TubeinspectionservicesComponent},
-  {path: 'phasedarray', component: TubeinspectionservicesComponent},
+  {path: 'mfltankfloorscanning', component: MfltankfloorscanningComponent},
+  {path: 'phasedarray', component: PhasedarrayComponent},
 
-  {path: 'timeofflightdiffraction', component: TubeinspectionservicesComponent},
+  {path: 'timeofflightdiffraction', component: TimeofflightdiffractionComponent},
 
-  {path: 'borescopeinspections', component: TubeinspectionservicesComponent},
+  {path: 'borescopeinspections', component: BorescopeinspectionsComponent},
 
 
 
