@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-contact',
@@ -10,11 +11,12 @@ export class ContactComponent implements OnInit {
 
   constructor(  
     private titleService: Title,  
-    private metaTagService: Meta  
+    private metaTagService: Meta  ,
+    private deviceService: DeviceDetectorService
   ) { }  
-
+  isMobile=false;
   ngOnInit(): void {
-
+    this.isMobile = this.deviceService.isMobile();
     this.titleService.setTitle("VNDTS");  
     
     this.metaTagService.addTags([  

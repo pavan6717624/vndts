@@ -37,11 +37,11 @@
             <div class="text-600"> (VNDTS)</div>
             <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
             <div class="text-900 font-bold text-xl mb-2"> Working Hours </div>
-            <div class="text-blue-600 font-bold"> Monday to Friday: 9:30AM - 6:00PM <br/>
-                                    Saturday: 9:30AM - 1:00PM </div>
+            <div class="text-blue-600 font-bold"> Monday to Friday: 9:30 AM - 6:00 PM <br/>
+                                    Saturday: 9:30 AM - 1:00 PM </div>
             <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
             <div class="grid" style="width:100%">
-                <div class="text-center" style="width:50%">
+                <div class="text-center" [style]="isMobile?'width:100%': 'width:50%'">
                 <span class="text-center ml-2 font-medium text-600">
                     Flat # 201, <br/>
                     Sri Sai VVSR& VKK Apartment,<br />
@@ -51,9 +51,9 @@
                     India <br/>
                 </span>
             </div>
-
-            <div class="text-center" style="width:50%">
-
+           
+            <div class="text-center" [style]="isMobile?'width:100%': 'width:50%'">
+                <hr *ngIf='isMobile' class="my-3 mx-0 border-top-1 border-none surface-border" />
                 <span class="ml-2 font-medium text-600">
                     3-131, <br/>
                     Talvayipadu, <br />
@@ -67,7 +67,7 @@
 
             <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
             <div class="grid" style="width:100%">
-                <div class="text-center" style="width:50%">
+                <div class="text-center" [style]="isMobile?'width:100%': 'width:50%'">
                 <span class="ml-2 font-medium text-600">
                     T Venu, <br /> <i class="pi pi-phone text-blue-500"></i> +91-72082 43202, <br /> <i
                         class="pi pi-send text-blue-500"></i> venu@vndts.co.in
@@ -78,8 +78,8 @@
 
             
 
-            <div class="text-center" style="width:50%">
-
+            <div class="text-center" [style]="isMobile?'width:100%': 'width:50%'">
+                <hr *ngIf='isMobile' class="my-3 mx-0 border-top-1 border-none surface-border" />
                 <span class="ml-2 font-medium text-600">
                     K Prajendra,<br /> <i class="pi pi-phone text-blue-500"></i> +91-97406 83469,<br /> <i
                         class="pi pi-send text-blue-500"></i> prajendra@vndts.co.in
