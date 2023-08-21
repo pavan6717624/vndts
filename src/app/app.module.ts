@@ -10,12 +10,14 @@ import { StickyheaderComponent } from './stickyheader/stickyheader.component';
 import { FormsModule } from '@angular/forms';
 import {MenubarModule} from 'primeng/menubar';
 import { FooterComponent } from './footer/footer.component';
+import { GalleryComponent } from './gallery/gallery.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     StickyheaderComponent,
     FooterComponent,
+    GalleryComponent,
 
 
   ],
@@ -25,7 +27,6 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     FormsModule,
     MenubarModule,
-   
   ],
   providers: [],
   bootstrap: [AppComponent]
