@@ -10,6 +10,91 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type='text/javascript'>
+		var map,contextMenu,loc;
+		function GetMap()
+		{
+			var northCarolinaBounds = Microsoft.Maps.LocationRect.fromEdges(36.696506, -84.362822, 33.794559, -75.117827);
+			map = new Microsoft.Maps.Map('#myMap', 
+			{
+				showDashboard: false, 	//Hide the default navigation bar.
+				maxBounds: northCarolinaBounds,
+				bounds: northCarolinaBounds
+			});
+		}
+		
+		function GetMapStreetView()
+		{
+			loc = new Microsoft.Maps.Location(39.47618, -121.53738);
+			map = new Microsoft.Maps.Map('#myMap', 
+			{
+				showDashboard: false,
+				center: loc,
+				mapTypeId: Microsoft.Maps.MapTypeId.streetside,
+				streetsideOptions: { showExitButton: false, showCurrentAddress: false },
+			});
+		}
+		
+		function GetMapBirdseyeView()
+		{
+			map = new Microsoft.Maps.Map('#myMap', 
+			{
+				showDashboard: false,
+				center: new Microsoft.Maps.Location(37.239027, -121.966237),
+				mapTypeId: Microsoft.Maps.MapTypeId.birdseye,
+			});
+		}
+		
+		function set_mapTypeId()
+		{
+			GetMap();
+			var map_type_id = document.getElementById("map_type").value;
+			if(map_type_id == "road")
+			{
+				map.setView({mapTypeId:Microsoft.Maps.MapTypeId.road});
+			}
+			else if(map_type_id == "aerial")
+			{
+				map.setView({mapTypeId:Microsoft.Maps.MapTypeId.aerial});
+			}
+			else if(map_type_id == "streetside")
+			{
+				GetMapStreetView();
+			}
+			else if(map_type_id == "birdseye")
+			{
+				GetMapBirdseyeView();
+				setTimeout(function(){ document.getElementsByClassName("birdseyeV2InfoExitControl")[0].innerHTML=""; }, 2000);
+			}
+			else if(map_type_id == "canvasLight")
+			{
+				map.setView({mapTypeId:Microsoft.Maps.MapTypeId.canvasLight});
+			}
+			else if(map_type_id == "canvasDark")
+			{
+				map.setView({mapTypeId:Microsoft.Maps.MapTypeId.canvasDark});
+			}
+			else if(map_type_id == "grayscale")
+			{
+				map.setView({mapTypeId:Microsoft.Maps.MapTypeId.grayscale});
+			}
+		}
+    </script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=As4jqrkoyeQcRTOqIBiQgui2O7xH5QO_Xahh37r63HnpJLdPRNq3kqmYwmYnbZJQ' async defer></script>
+    <style>
+        .mapContainer, #myMap{
+            position:relative;
+            width:600px;
+            height:400px;
+        }
+
+        .customNavBar {
+            position:absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+
 </head>
 <body>
   <app-root></app-root>
@@ -21,5 +106,7 @@
         mapTypeId: google.maps.MapTypeId.ROADMAP
      });
  </script> -->
+
+ 
 </body>
 </html>
