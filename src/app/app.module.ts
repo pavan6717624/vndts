@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import {MenubarModule} from 'primeng/menubar';
 import { FooterComponent } from './footer/footer.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     AppRoutingModule,
     FormsModule,
     MenubarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
