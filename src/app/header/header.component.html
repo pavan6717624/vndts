@@ -1,16 +1,104 @@
-<div class="grid"
-    [style]="{'padding':'0','background-color':'red', 'width': '100%' , 'margin':'0','height':'4em','border-width':0, 'border-radius':0,'vertical-align':'middle'}">
+<div class="grid topbar-wrap"
+    [style]="{'padding':'0','background-color':'#d71920', 'width': '100%', 'margin':'0', 'height':'4em', 'border-width':0, 'border-radius':0, 'vertical-align':'middle'}">
 
-    <div class="col-12" style="color:white;display:flex;
-        align-items:center; justify-content: space-between; font-weight: bold;">
+    <div class="col-12 topbar" style="color:white; display:flex; align-items:center; justify-content:space-between; font-weight:600; letter-spacing:0.02em;">
 
+        <div class="topbar-item iso-item">
+            <span>ISO certified: 9001: 2015</span>
+        </div>
 
+        <div class="topbar-contact-row">
+            <div class="topbar-item">
+                <a href="tel:+917208243202" style="color:white; text-decoration:none;">
+                    <span class="desktop-label">Support : </span><span class="mobile-only"> </span>+91 72082 43202 <i class="pi pi-phone"></i>
+                </a>
+            </div>
 
-        <div> Support : &nbsp;&nbsp; +917208243202 &nbsp;<i class="pi pi-phone"></i> </div>
-
-        <div> Mail : &nbsp;&nbsp; info@vndts.co.in &nbsp;<i class="pi pi-send"></i> </div>
+            <div class="topbar-item">
+                <a href="mailto:info@vndts.co.in" style="color:white; text-decoration:none;">
+                    <span class="desktop-label">Mail : </span><span class="mobile-only"> </span>info@vndts.co.in <i class="pi pi-send"></i>
+                </a>
+            </div>
+        </div>
 
     </div>
 
-
 </div>
+
+<style>
+  .topbar-wrap .topbar {
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .topbar-contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .topbar-item {
+    white-space: nowrap;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    .topbar-wrap {
+      height: auto !important;
+    }
+
+    .topbar-wrap .topbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.4rem 0.5rem;
+      min-height: 4em;
+    }
+
+    .topbar-contact-row {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem 0.6rem;
+      flex-wrap: nowrap;
+    }
+
+    .topbar-item {
+      width: auto;
+      text-align: center;
+      white-space: normal;
+      line-height: 1.25;
+    }
+
+    .topbar-item a,
+    .topbar-item span {
+      font-size: 0.72rem;
+    }
+
+    .desktop-label {
+      display: none;
+    }
+
+    .mobile-only {
+      display: inline;
+    }
+
+    .topbar-item a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    .iso-item {
+      width: 100%;
+      margin-bottom: 0.05rem;
+    }
+  }
+</style>
